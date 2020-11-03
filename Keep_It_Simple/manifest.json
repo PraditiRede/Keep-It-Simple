@@ -1,0 +1,23 @@
+{
+  "name": "Keep It Simple",
+  "description": "Clever Clipboard & Notepad in one extension. Save text snippets as one single file - and Keep It Simple!",
+  "version": "0.0.6",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["contextMenus", "storage", "activeTab", "tabs", "http://*/", "https://*/"],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "icons": {
+   "16": "icon.png",
+   "48": "icon.png",
+   "32": "icon.png",
+   "128": "icon.png"
+},
+  "manifest_version": 2,
+  "short_name": "Keep It Simple",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
